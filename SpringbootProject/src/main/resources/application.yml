@@ -1,7 +1,33 @@
-# rabbitmq����
+
 spring:
+  #rabbitmq配置
   rabbitmq:
     host: 127.0.0.1
-    port: 15672
+    port: 5672
     username: lee
     password: lee
+  #mysql连接配置
+  datasource:
+    url: jdbc:mysql://150.158.27.148:3306/spdb
+    username: leezh
+    password: Lzh2815729
+    driver-class-name: com.mysql.jdbc.Driver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+#日志级别
+logging:
+  level:
+    root: info
+    com.psbc.tjxyk.mapper: debug
+#mybatis
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+server:
+  port: 8081
+  session:
+    timeout: 10
