@@ -21,4 +21,18 @@ public class RabbitProducer {
         this.rabbitTemplate.convertAndSend("demoQueue", dateString);
         //this.rabbitTemplate.
     }
+
+
+    /**
+     * 功能描述: 创建消息生产者_发送订单请求
+     * 〈〉
+     * @Param: []
+     * @Return: void
+     * @Author: Administrator
+     * @Date: 2021/12/8 15:22
+     */
+    public void sendOrderReq(){
+
+    }
+
 }

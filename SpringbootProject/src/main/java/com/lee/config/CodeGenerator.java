@@ -15,7 +15,7 @@ public class CodeGenerator{
     private final static String parent="com.lee.busi";//父级包名
     private final static String moduleName="sms";//模块名
     private final static String mapperDir="d://code_gene";//mapper路径
-    private final static String tableName="tb_msg_record";//表名
+    private final static String tableName="tb_goods_info";//表名
 
     public static void main(String[] a){
         FastAutoGenerator.create(dbUrl, dbUsernmae, dbPasswd)

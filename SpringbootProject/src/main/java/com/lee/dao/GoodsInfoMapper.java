@@ -1,7 +1,7 @@
 package com.lee.dao;
 
-import com.lee.entity.MsgRecord;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lee.entity.GoodsInfo;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author lee
- * @since 2021-12-07
+ * @since 2021-12-08
  */
 @Mapper
-public interface MsgRecordMapper extends BaseMapper<MsgRecord> {
+public interface GoodsInfoMapper extends BaseMapper<GoodsInfo> {
 
 }
